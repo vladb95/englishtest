@@ -17,7 +17,7 @@
 				}
 			}
 			$views=["top"=>"../app/views/usersTop/top.php"];
-			$viewsUn=["login"=>"../app/views/layouts/_login.php"];
+			$viewsUn=["login"=>"../app/views/layouts/_login.php","singup"=>"../app/views/layouts/_singup.php"];
 			if(isset($_SESSION['login'])){
 				if(isset($viewsUn[$_GET["action"]])&&!isset($views[$_GET["action"]])){
 					return "../app/views/layouts/default.php";
