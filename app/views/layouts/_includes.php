@@ -9,7 +9,8 @@
 	<script type="text/javascript">
 		$( document ).ready(function(){
 			$(".button-collapse").sideNav();
+			$('.modal-trigger').leanModal();
+			$('select').material_select();
 		});
-		
 	</script>
 </head>

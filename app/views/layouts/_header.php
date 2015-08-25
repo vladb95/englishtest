@@ -19,7 +19,7 @@ include_once("_includes.php");
 	    <div class="nav-wrapper">
 	    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="?action=test">Тесты</a></li>
 	        <li><a href="badges.html">Components</a></li>
 	        <li><a href="collapsible.html">JavaScript</a></li>
 	      </ul>
@@ -33,7 +33,7 @@ include_once("_includes.php");
 	    <div class="nav-wrapper teal lighten-2">
 	    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="?action=test">Тесты</a></li>
 	        <li><a href="badges.html">Components</a></li>
 	        <li><a href="collapsible.html">JavaScript</a></li>
 	      </ul>

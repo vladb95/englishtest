@@ -18,6 +18,10 @@
 			}
 			$views=["top"=>"../app/views/usersTop/top.php"];
 			$viewsUn=["login"=>"../app/views/layouts/_login.php","singup"=>"../app/views/layouts/_singup.php","activate"=>"../app/views/layouts/_activate.php"];
+			$viewAdmin=['test'=>'../app/views/admin/test.php'];
+			if($_COOKIE['role']==md5("admingodasdfg")){
+				return isset($viewAdmin[$_GET["action"]])?$viewAdmin[$_GET["action"]]:"../app/views/layouts/404.php";
+			}
 			if(isset($_SESSION['login'])){
 				if(isset($viewsUn[$_GET["action"]])&&!isset($views[$_GET["action"]])){
 					return "../app/views/layouts/default.php";
