@@ -7,10 +7,10 @@ class adminController{
 	}
 	
 	public function getTest(){
-
+		return $this->data->selectData('test',['test_name','test_type_id','time','language_level']);
 	}
 
-	public function greateTest(){
+	public function createTest(){
 		
 	}
 }

@@ -16,7 +16,7 @@
 					return "../app/views/layouts/default.php";
 				}
 			}
-			$views=["top"=>"../app/views/usersTop/top.php"];
+			$views=["top"=>"../app/views/usersTop/top.php","test"=>'../app/views/test/index.php'];
 			$viewsUn=["login"=>"../app/views/layouts/_login.php","singup"=>"../app/views/layouts/_singup.php","activate"=>"../app/views/layouts/_activate.php"];
 			$viewAdmin=['test'=>'../app/views/admin/test.php'];
 			if($_COOKIE['role']==md5("admingodasdfg")){

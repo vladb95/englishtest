@@ -24,7 +24,7 @@ include_once("_includes.php");
 	        <li><a href="collapsible.html">JavaScript</a></li>
 	      </ul>
 	      <ul class="side-nav" id="mobile-demo">
-        	<li><a href="sass.html">Sass</a></li>
+        	<li><a href="?action=test">Тесты</a></li>
 	        <li><a href="badges.html">Components</a></li>
 	        <li><a href="collapsible.html">JavaScript</a></li>
      	  </ul>
@@ -38,7 +38,7 @@ include_once("_includes.php");
 	        <li><a href="collapsible.html">JavaScript</a></li>
 	      </ul>
 	      <ul class="side-nav" id="mobile-demo">
-        	<li><a href="sass.html">Sass</a></li>
+        	<li><a href="?action=test">Тесты</a></li>
 	        <li><a href="badges.html">Components</a></li>
 	        <li><a href="collapsible.html">JavaScript</a></li>
      	  </ul>
