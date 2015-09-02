@@ -7,7 +7,7 @@ class adminController{
 	}
 	
 	public function getTest(){
-		return $this->data->selectData('test',['test_name','test_type_id','time','language_level']);
+		return $this->data->selectData('test',['test_name','test_type_id','time']);
 	}
 
 	public function createTest(){
