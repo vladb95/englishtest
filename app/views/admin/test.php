@@ -5,15 +5,6 @@ $admin=new adminController();
 $helper=new helperController();
 ?>
 <script type="text/javascript">
-	/*$(document).ready(function(){
-		$('.modal-trigger').leanModal({
-		      dismissible: false, // Modal can be dismissed by clicking outside of the modal
-		      opacity: .5, // Opacity of modal background
-		      in_duration: 300, // Transition in duration
-		      out_duration: 2000, // Transition out duration
-		    }
-		  );
-	});*/
 </script>
 <!--START MODAL-->
 <div class="fixed-action-btn">
@@ -85,7 +76,7 @@ $helper=new helperController();
       		</span>
 
       </div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      <div class="collapsible-body"><p>Lorem ipsum </p></div>
     </li>
     <?endforeach;?>
   </ul>

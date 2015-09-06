@@ -13,4 +13,8 @@ class adminController{
 	public function createTest(){
 		
 	}
+
+	public function getTestsResult(){
+		return $this->data->selectData('test_event',['profile_id','test_id','hits','status_id']);
+	}
 }
