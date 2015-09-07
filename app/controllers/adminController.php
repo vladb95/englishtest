@@ -22,4 +22,15 @@ class adminController{
 	public function getTestsResult(){
 		return $this->data->selectData('test_event',['profile_id','test_id','hits','status_id']);
 	}
+
+	private function sortUserTop($userArray){
+		/**/
+		
+		return $userArray;
+	}
+
+	public function getUserTop(){
+		$userArr=$this->data->selectData('profile',['name','rate','email']);
+		return $this->sortUserTop($userArr);
+	}
 }
