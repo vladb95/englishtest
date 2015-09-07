@@ -54,7 +54,8 @@ $helper=new helperController();
     </div>
     <div class="modal-footer">
     	<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
-        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat">Add</a>
+      <button onclick="createTest(1,1,1,1,1)">Test</button>
+      <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="createTest(1,1,1,1,1)">Add</a>
     </div>
 </div>
 <!--END MODAL-->

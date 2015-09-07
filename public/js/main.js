@@ -39,7 +39,14 @@
 
 	this.createTest=function(testName,testType,testDuration,testLevel,questionsCount){
 		var reqParams="name="+testName+"&type="+testType+"&duration="+testDuration+"&level="+testLevel+"&count="+questionsCount;
-		ajaxAbstract('POST','',reqParams,materializeDialog);
+		ajaxAbstract('POST','/public/ajax/ajaxController.php',reqParams,materializeDialog);
+	}
+
+	this.loadTest=function(){
+		var reqParams="key=get_test";
+		ajaxAbstract('GET','/public/ajax/ajaxController.php?'+reqParams,null,function(resp){
+
+		});
 	}
 
 })();
