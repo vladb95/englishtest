@@ -10,8 +10,13 @@ class adminController{
 		return $this->data->selectData('test',['test_name','test_type_id','time']);
 	}
 
-	public function createTest(){
-		
+	public function createTest($name,$type_id,$time,$level_id){
+		try{
+			$data->insertData('test',['test_name'=>$name,'test_type_id'=>$type_id,'time'=>$time,'language_level_id'=>$level_id]);
+			return 'Success operation';
+		}catch{
+			return 'Unknown exception';
+		}
 	}
 
 	public function getTestsResult(){
