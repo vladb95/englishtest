@@ -14,7 +14,7 @@ class adminController{
 		try{
 			$data->insertData('test',['test_name'=>$name,'test_type_id'=>$type_id,'time'=>$time,'language_level_id'=>$level_id]);
 			return 'Success operation';
-		}catch{
+		}catch(Exception $e){
 			return 'Unknown exception';
 		}
 	}
