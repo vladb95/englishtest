@@ -60,7 +60,7 @@ $helper=new helperController();
 </div>
 <!--END MODAL-->
 
-<ul class="collapsible" data-collapsible="accordion" style="margin:15px;">
+<ul class="collapsible" data-collapsible="accordion" style="margin:15px;" id="testUl">
 	<?foreach ($admin->getTest() as $key):?>
     <li>
       <div class="collapsible-header">

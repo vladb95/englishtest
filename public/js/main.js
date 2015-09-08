@@ -45,7 +45,8 @@
 	this.loadTest=function(){
 		var reqParams="key=get_test";
 		ajaxAbstract('GET','/public/ajax/ajaxController.php?'+reqParams,null,function(resp){
-
+			var testul=document.getElementById('testUl');
+			
 		});
 	}
 
