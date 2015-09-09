@@ -1,16 +1,19 @@
 <?
-require('../../app/controllers/adminController.php');
-require('../../app/controllers/helperController.php');
-class ajaxController{
-	protected $_instance;
+var_dump($_GET);
+
+//include_once('../app/controllers/adminController.php');
+
+//include_once('../app/controllers/helperController.php');
+/*class ajaxController{
+	protected static $_instance;
 
 	private $_admin;
 	private $_helper;
 
 	private function __construct(){
-		$this->$_admin=new adminController();
-		$this->$_helper=new helperController();
-		self::getInstance();
+		/*$this->$_admin=new adminController();
+		$this->$_helper=new helperController();*/
+		/*self::getInstance();
 	}
 
 	private function __clone(){
@@ -44,7 +47,7 @@ class ajaxController{
 	}
 
 	/*Test*/
-	private function createTest(){
+	/*private function createTest(){
 		echo $this->admin->createTest($_REQUEST['name'],$_REQUEST['type'],$_REQUEST['duration'],$_REQUEST['level']);
 	}
 
@@ -58,7 +61,7 @@ class ajaxController{
     /*End test*/
 
     /*Question*/
-	private function createQuestion(){
+/*	private function createQuestion(){
 
 	}
 
@@ -71,13 +74,18 @@ class ajaxController{
 	}
 
 	private function getTest(){
-		$tests=$this->admin->getTest();
-	    echo $tests;
+		//$tests=$this->admin->getTest();
+		/*$json=array();
+		while ($row = mysql_fetch_array($tests, MYSQL_ASSOC)){
+    		$json[] = $row;
+  		}
+	    echo json_encode($json);*/
+	   /* echo 'test 1233';
 	}
 	/*End question*/
-}
+/*}
 
 /*ajax hendler*/
-$hendler=ajaxController::getInstance();
+/*$hendler=ajaxController::getInstance();
 $hendler->switchControllerFunction();
 /*end hendler*/

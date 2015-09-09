@@ -1,5 +1,5 @@
 <?
-include("../app/models/AbstractRepository.php");
+include_once("../app/models/AbstractRepository.php");
 class adminController{
 	private $data;
 	public function __construct(){
