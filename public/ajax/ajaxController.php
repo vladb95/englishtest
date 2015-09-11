@@ -4,7 +4,7 @@ var_dump($_GET);
 //include_once('../app/controllers/adminController.php');
 
 //include_once('../app/controllers/helperController.php');
-/*class ajaxController{
+class ajaxController{
 	protected static $_instance;
 
 	private $_admin;
@@ -13,7 +13,7 @@ var_dump($_GET);
 	private function __construct(){
 		/*$this->$_admin=new adminController();
 		$this->$_helper=new helperController();*/
-		/*self::getInstance();
+		/*self::getInstance();*/
 	}
 
 	private function __clone(){
@@ -47,7 +47,7 @@ var_dump($_GET);
 	}
 
 	/*Test*/
-	/*private function createTest(){
+	private function createTest(){
 		echo $this->admin->createTest($_REQUEST['name'],$_REQUEST['type'],$_REQUEST['duration'],$_REQUEST['level']);
 	}
 
@@ -61,7 +61,7 @@ var_dump($_GET);
     /*End test*/
 
     /*Question*/
-/*	private function createQuestion(){
+	private function createQuestion(){
 
 	}
 
@@ -83,9 +83,9 @@ var_dump($_GET);
 	   /* echo 'test 1233';
 	}
 	/*End question*/
-/*}
+}
 
 /*ajax hendler*/
-/*$hendler=ajaxController::getInstance();
+$hendler=ajaxController::getInstance();
 $hendler->switchControllerFunction();
 /*end hendler*/
